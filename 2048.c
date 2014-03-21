@@ -94,7 +94,8 @@ void board_dump(board_t b, int y, int x) {
     draw_grid(y, x);
     for (i = 0; i < SIZE; i++) {
         for (j = 0; j < SIZE; j++) {
-            mvprintw(i * 4 + 2 + y, j * 9 + 3 + x, "%d", value_real[b[i][j]]);
+            if (b[i][j])
+                mvprintw(i * 4 + 2 + y, j * 9 + 3 + x, "%d", value_real[b[i][j]]);
         }
     }
 }
