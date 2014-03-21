@@ -1,7 +1,7 @@
 2048-AI
 =======
 
-2048 game with an smart AI that can reach the 8192 block.
+2048 game with a smart AI that can reach the 8192 block.
 Here is my results of 10 consecutive runs:
 
     Max Block      Score 
